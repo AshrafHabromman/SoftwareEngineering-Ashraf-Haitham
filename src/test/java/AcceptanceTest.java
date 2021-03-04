@@ -11,11 +11,6 @@ import org.junit.runner.RunWith;
         ,strict = true)
 
 
-
-
-
-
-
 public class AcceptanceTest {
 
 

@@ -1,15 +1,23 @@
 public class Admin {
 
+    private String userName;
+    private String password;
 
-    public static String getUsername() {
-
-        return "ahmad";
-
+    public Admin(){
+        this.userName = "";
+        this.password = "";
     }
 
-    public static String getPassword() {
+    public Admin(String userName,String password ){
+        this.userName = userName;
+        this.password = password;
+    }
 
- return "1234";
+    public String getUsername() {
+        return this.userName;
+    }
 
+    public String getPassword() {
+        return this.password;
     }
 }
