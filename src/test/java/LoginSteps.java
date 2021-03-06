@@ -1,6 +1,7 @@
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.mockito.Mockito;
 
 import javax.swing.*;
 
@@ -17,6 +18,7 @@ public class LoginSteps {
     private Admin admin1;
     private Admin admin2;
 
+
     Admins admins = new Admins();
 
     @Given("The admin chose to login")
@@ -31,11 +33,15 @@ public class LoginSteps {
     public void the_admin_login_with_valid_credentials() {
         // Write code here that turns the phrase above into concrete actions
 
-        Admin obj = new Admin();
+
         for(int i=0 ; i<admins.allAdmins.size(); i++){
+
+            Admin obj = new Admin();
             obj = admins.allAdmins.get(i);
             if(obj.getUsername() == admin1.getUsername() && obj.getPassword() == admin1.getPassword()){
                 adminIsExist = true;
+
+
             }
         }
     }
