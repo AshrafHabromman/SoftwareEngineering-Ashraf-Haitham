@@ -1,5 +1,4 @@
-Feature:
-  admin login
+Feature: admin login
 
   Scenario: valid login
     Given The admin chose to login

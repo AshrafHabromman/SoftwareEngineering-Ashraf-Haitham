@@ -1,7 +1,4 @@
-Feature:
-  admin logout
-Background:
-  Scenario:
+Feature: admin logout
   Scenario: Admin logs out
     Given The admin chose to logout
     When  The admin is logged in

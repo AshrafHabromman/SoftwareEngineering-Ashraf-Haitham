@@ -1,17 +1,17 @@
 Feature: Adding a book
 
 
-  Scenario: User is logged in
-    Given Admin tries to add a book
-    When  The admin is logged in
+  Scenario: Admin is logged in
+    Given Admin tries to add a book And  is logged in
+    When  The admin enter the information of the book
     Then  Book is added successfully
     And   Message shows that the book is added
 
-    Scenario: User is not logged in
-      Given User tries to add a book
-      When  The user is not logged in
+    Scenario: Admin is not logged in
+      Given Admin is not logged in
+      When  Admin tries to add a book
       Then  Book cannot be added
-      And   Message shows that it is and admin feature
+      And   Message shows that you have to log in
 
 
 
