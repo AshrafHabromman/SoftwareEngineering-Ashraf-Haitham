@@ -33,7 +33,7 @@ public class LogoutSteps {
     @Then("The admin gets a goodbye message")
     public void the_admin_gets_a_goodbye_message() {
         // Write code here that turns the phrase above into concrete actions
-    JOptionPane.showMessageDialog(null , "Goodbye Admin");
+        //JOptionPane.showMessageDialog(null , "Goodbye Admin");
     }
 
 

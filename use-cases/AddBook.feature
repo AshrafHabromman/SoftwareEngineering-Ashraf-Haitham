@@ -3,7 +3,7 @@ Feature: Adding a book
 
   Scenario: Admin is logged in
     Given Admin tries to add a book And  is logged in
-    When  The admin enter the information of the book and valid ISBN
+    When  The admin enter the information of the book
     Then  Book is added successfully
     And   Message shows that the book is added
 

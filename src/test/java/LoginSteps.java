@@ -2,10 +2,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-
 import javax.swing.*;
-
-
 
 import static org.junit.Assert.*;
 
@@ -17,7 +14,6 @@ public class LoginSteps {
     private boolean adminDoesNotExist= false;
     private Admin admin1;
     private Admin admin2;
-
 
     Admins admins = new Admins();
 
@@ -57,7 +53,7 @@ public class LoginSteps {
     @Then("The admin gets a greeting message")
     public void the_admin_gets_a_greeting_message() {
         // Write code here that turns the phrase above into concrete actions
-        JOptionPane.showMessageDialog(null, "Welcome Admin");
+        //JOptionPane.showMessageDialog(null, "Welcome Admin");
 
     }
 
@@ -85,16 +81,6 @@ public class LoginSteps {
     @Then("clears the typed password")
     public void clears_the_typed_password() {
         // Write code here that turns the phrase above into concrete actions
-        JOptionPane.showMessageDialog(null , "Wrong Password");
+        //JOptionPane.showMessageDialog(null , "Wrong Password");
     }
-
-
-
-
-
-
-
-
-
-
 }
