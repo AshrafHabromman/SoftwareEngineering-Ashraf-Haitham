@@ -1,7 +1,7 @@
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.mockito.Mockito;
+
 
 import javax.swing.*;
 
@@ -26,7 +26,6 @@ public class LoginSteps {
         // Write code here that turns the phrase above into concrete actions
         admin1 = new Admin("ahmad", "12345");
         admin2 = new Admin("khalid","12333");
-
     }
 
     @When("The admin login with valid credentials")
