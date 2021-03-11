@@ -1,3 +1,5 @@
+package production;
+
 public class Book {
 
     private String title;
@@ -38,6 +40,14 @@ public class Book {
     private String signature;
     private String iSBN;
 
+
+    public Book() {
+
+        this.title = "";
+        this.author = "";
+        this.signature = "";
+        this.iSBN = "";
+    }
     public Book(String title, String author, String signature, String iSBN) {
 
         this.title = title;
@@ -45,12 +55,5 @@ public class Book {
         this.signature = signature;
         this.iSBN = iSBN;
 
-    }
-    public Book() {
-
-        this.title = "";
-        this.author = "";
-        this.signature = "";
-        this.iSBN = "";
     }
 }

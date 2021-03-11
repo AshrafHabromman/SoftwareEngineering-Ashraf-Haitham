@@ -1,8 +1,10 @@
+package production;
+
 import java.util.ArrayList;
 
 public class Admins {
 
-    ArrayList<Admin> allAdmins = new ArrayList<Admin>();
+    public ArrayList<Admin> allAdmins = new ArrayList<Admin>();
 
     public Admins(){
         allAdmins.add(new Admin("ahmad","12345",true));
