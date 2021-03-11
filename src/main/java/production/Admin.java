@@ -1,3 +1,5 @@
+package production;
+
 public class Admin {
 
     private String userName;
