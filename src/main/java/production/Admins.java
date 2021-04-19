@@ -11,7 +11,6 @@ public class Admins {
         allAdmins.add(new Admin("ali","12345"));
         allAdmins.add(new Admin("khalid","12345"));
         allAdmins.add(new Admin("abd","12345"));
-
     }
 
 }

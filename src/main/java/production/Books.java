@@ -9,7 +9,6 @@ public class Books {
         allBooks.add(new Book("AI","rami", "rami2021","1234"));
         allBooks.add(new Book("digital","mohamad", "mohamad2018","12345"));
     }
-
     public int searchByTitle(String subStringOfTitle) {
         Book obj = new Book();
         int numOfBooks = 0;
