@@ -19,7 +19,6 @@ public class Admin {
         this.isLoggedIn = isLoggedIn;
     }
 
-
     public Admin(String userName,String password){
         this.userName = userName;
         this.password = password;
