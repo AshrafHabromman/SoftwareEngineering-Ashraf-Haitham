@@ -4,7 +4,7 @@ import production.Books;
 import javax.swing.*;
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertTrue;
-
+import static org.junit.Assert.assertEquals;
 public class SearchBookSteps {
 
     private String subStringOfTitle;
@@ -29,7 +29,7 @@ public class SearchBookSteps {
 
     @Then("The book appears to the user with all info")
     public void the_book_appears_to_the_user_with_all_info() {
-        assertEqual(bookFoundByTitle == 1);
+        assertEquals(bookFoundByTitle, 1);
     }
 
     @Given("The user types a substring book author")
@@ -44,7 +44,7 @@ public class SearchBookSteps {
 
     @Then("The book appears to the user with all info for author")
     public void the_book_appears_to_the_user_with_all_info_for_author() {
-        assertEqual(bookFoundByAuthor == 1);
+        assertEquals(bookFoundByAuthor, 1);
     }
 
     @Given("The user types a  valid book ISBN")
@@ -57,10 +57,9 @@ public class SearchBookSteps {
     }
     @Then("The book with the isbn appears to the user with all info")
     public void the_book_with_the_isbn_appears_to_the_user_with_all_info() {
-        assertEqual(bookFoundByISBN == 1);
+        assertEquals(bookFoundByISBN, 1);
 
     }
-
 
     @Given("The user searches for a book")
     public void the_user_searches_for_a_book() {
@@ -74,7 +73,7 @@ public class SearchBookSteps {
     }
 
     @Then("No book found")
-    public void no_book_found() {  assertEqual(bookFoundByTitle == 0);
+    public void no_book_found() {  assertEquals(bookFoundByTitle, 0);
     }
 
     @When("More than one book match the criteria")
