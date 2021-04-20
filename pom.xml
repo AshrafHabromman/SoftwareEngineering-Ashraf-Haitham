@@ -10,15 +10,28 @@
     <groupId>org.example</groupId>
     <artifactId>Project_software</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <sourceDirectory>src/main/java/production</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.7.0.1746</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
 
-        <dependency>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.7.0.1746</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.sonarsource.scanner.maven</groupId>-->
+<!--            <artifactId>sonar-maven-plugin</artifactId>-->
+<!--            <version>3.7.0.1746</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
@@ -57,36 +70,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.6.4.201312101107</version>
-                <executions>
-                    <execution>
-                        <id>default-prepare-agent</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>default-report</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>default-check</id>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>
