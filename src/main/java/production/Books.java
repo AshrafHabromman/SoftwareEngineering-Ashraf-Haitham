@@ -32,7 +32,7 @@ public class Books {
 
     public int searchByAuthor(String subStringOfAuthor) {
 
-        Book obj = new Book();
+        Book obj ;
         int numOfBooks = 0;
         CharSequence author = subStringOfAuthor;
         for (int i=0; i<this.allBooks.size(); i++){
@@ -45,7 +45,7 @@ public class Books {
     }
 
     public int searchByISBN(String subStringOfISBN) {
-        Book obj = new Book();
+        Book obj ;
         int numOfBooks = 0;
         CharSequence iSBN = subStringOfISBN;
         for (int i=0; i<this.allBooks.size(); i++){

@@ -38,9 +38,6 @@ public class Admin {
         return isLoggedIn;
     }
 
-    public void setLoggedIn(boolean loggedIn) {
-        isLoggedIn = loggedIn;
-    }
 
 
 }
