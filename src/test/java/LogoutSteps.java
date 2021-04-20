@@ -23,7 +23,7 @@ public class LogoutSteps {
     @When("The admin is logged in")
     public void the_admin_is_logged_in() {
         // Write code here that turns the phrase above into concrete actions
-        isLoggedIn = admins.allAdmins.get(0).isLoggedIn();
+        isLoggedIn = admins.getAllAdmins().get(0).isLoggedIn();
     }
 
     @Then("The admin is directed to the login page")
@@ -37,22 +37,4 @@ public class LogoutSteps {
         // Write code here that turns the phrase above into concrete actions
         //JOptionPane.showMessageDialog(null , "Goodbye Admin");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
