@@ -29,7 +29,7 @@ public class SearchBookSteps {
 
     @Then("The book appears to the user with all info")
     public void the_book_appears_to_the_user_with_all_info() {
-        assertEquals(bookFoundByTitle, 1);
+        assertEquals(1, bookFoundByTitle);
     }
 
     @Given("The user types a substring book author")
@@ -44,7 +44,7 @@ public class SearchBookSteps {
 
     @Then("The book appears to the user with all info for author")
     public void the_book_appears_to_the_user_with_all_info_for_author() {
-        assertEquals(bookFoundByAuthor, 1);
+        assertEquals( 1, bookFoundByAuthor);
     }
 
     @Given("The user types a  valid book ISBN")
@@ -57,7 +57,7 @@ public class SearchBookSteps {
     }
     @Then("The book with the isbn appears to the user with all info")
     public void the_book_with_the_isbn_appears_to_the_user_with_all_info() {
-        assertEquals(bookFoundByISBN, 1);
+        assertEquals(1,bookFoundByISBN);
 
     }
 
@@ -73,7 +73,7 @@ public class SearchBookSteps {
     }
 
     @Then("No book found")
-    public void no_book_found() {  assertEquals(bookFoundByTitle, 0);
+    public void no_book_found() {  assertEquals(0,bookFoundByTitle);
     }
 
     @When("More than one book match the criteria")
