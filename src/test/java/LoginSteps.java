@@ -22,7 +22,7 @@ public class LoginSteps {
     @Given("The admin chose to login")
     public void the_admin_chose_to_login() {
         // Write code here that turns the phrase above into concrete actions
-        admin1 = new Admin("ahmad", "12345");
+        admin1 = new Admin("ahmad", "123456");
         admin2 = new Admin("khalid","12333");
     }
 
@@ -31,10 +31,10 @@ public class LoginSteps {
         // Write code here that turns the phrase above into concrete actions
 
 
-        for(int i=0 ; i<admins.allAdmins.size(); i++){
+        for(int i=0 ; i<admins.getAllAdmins().size(); i++){
 
             Admin obj = new Admin();
-            obj = admins.allAdmins.get(i);
+            obj = admins.getAllAdmins().get(i);
             if(obj.getUsername() == admin1.getUsername() && obj.getPassword() == admin1.getPassword()){
                 adminIsExist = true;
 
@@ -64,8 +64,8 @@ public class LoginSteps {
         // Write code here that turns the phrase above into concrete actions
 
         Admin obj = new Admin();
-        for(int i=0 ; i<admins.allAdmins.size(); i++){
-            obj = admins.allAdmins.get(i);
+        for(int i=0 ; i<admins.getAllAdmins().size(); i++){
+            obj = admins.getAllAdmins().get(i);
             if(obj.getUsername() == admin2.getUsername() && obj.getPassword() == admin2.getPassword()){
                 adminDoesNotExist = true;
             }

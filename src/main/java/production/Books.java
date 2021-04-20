@@ -1,16 +1,17 @@
 package production;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Books {
 
-    ArrayList<Book> allBooks = new ArrayList<Book>();
+    private List<Book> allBooks = new ArrayList<>();
     public Books(){
         allBooks.add(new Book("c++","ramiz", "john2020","123"));
         allBooks.add(new Book("AI","rami", "rami2021","1234"));
         allBooks.add(new Book("digital","mohamad", "mohamad2018","12345"));
     }
     public int searchByTitle(String subStringOfTitle) {
-        Book obj = new Book();
+        Book obj;
         int numOfBooks = 0;
         CharSequence title = subStringOfTitle;
         for (int i=0; i<this.allBooks.size(); i++){
@@ -23,11 +24,10 @@ public class Books {
     }
 
     public boolean addNewBook(Book bookToAdd, boolean isLoggedIn) {
-        if(isLoggedIn == false)
+        if(!isLoggedIn)
             return false;
 
-        boolean bookAdded = this.allBooks.add(bookToAdd);
-        return bookAdded;
+        return this.allBooks.add(bookToAdd);
     }
 
     public int searchByAuthor(String subStringOfAuthor) {
