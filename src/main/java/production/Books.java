@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Books {
 
-    private List<Book> allBooks = new ArrayList<>();
+     List<Book> allBooks = new ArrayList<>();
     public Books(){
         allBooks.add(new Book("c++","ramiz", "john2020","123"));
         allBooks.add(new Book("AI","rami", "rami2021","1234"));
