@@ -6,6 +6,13 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <java.version>11</java.version>
+            <jacoco.version>0.8.5</jacoco.version>
+            <sonar.jacoco.reportPath>target/jacoco-ut.exec</sonar.jacoco.reportPath>
+            <sonar.jacoco.itReportPaths>target/jacoco-it.exec</sonar.jacoco.itReportPaths>
+
     </properties>
     <groupId>org.example</groupId>
     <artifactId>Project_software</artifactId>
@@ -83,6 +90,12 @@
             <version>6.9.1</version>
             <scope>test</scope>
         </dependency>
+
+
     </dependencies>
+
+
+
+
 
 </project>
