@@ -1,11 +1,15 @@
 package production;
 
+import java.util.logging.Logger;
+
 public class Admin {
 
     private String userName;
     private String password;
 
     private boolean isLoggedIn;
+    Logger LOGGER =Logger.getLogger(Admin.class.getName());
+
 
     public Admin(){
         this.userName = "";
@@ -23,6 +27,7 @@ public class Admin {
         this.userName = userName;
         this.password = password;
         this.isLoggedIn = false;
+        LOGGER.info("I am in the constructor");
     }
 
     public String getUsername() {
