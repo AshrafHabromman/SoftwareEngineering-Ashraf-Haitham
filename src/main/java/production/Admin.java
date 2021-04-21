@@ -8,7 +8,7 @@ public class Admin {
     private String password;
 
     private boolean isLoggedIn;
-    Logger LOGGER =Logger.getLogger(Admin.class.getName());
+    Logger logger =Logger.getLogger(Admin.class.getName());
 
 
     public Admin(){
@@ -27,7 +27,7 @@ public class Admin {
         this.userName = userName;
         this.password = password;
         this.isLoggedIn = false;
-        LOGGER.info("I am in the constructor");
+        logger.info("I am in the constructor");
     }
 
     public String getUsername() {
